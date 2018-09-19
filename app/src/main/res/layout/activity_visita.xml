@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisitaActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="129dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/gerenciar_visitas"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/delete_btna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/inserir_visita"
+        app:layout_constraintBottom_toTopOf="@+id/listview"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="197dp"
+        android:layout_toStartOf="@id/delete_btn"
+        android:text="editar"
+        app:layout_constraintBottom_toBottomOf="@+id/delete_btna"
+        app:layout_constraintEnd_toStartOf="@+id/delete_btna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/delete_btna" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="82dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="252dp"
+        android:text="excluir"
+        app:layout_constraintBottom_toTopOf="@+id/delete_btnb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_btna"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_btna"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="197dp"
+        android:layout_toStartOf="@id/delete_btn"
+        android:text="editar"
+        app:layout_constraintBottom_toTopOf="@+id/add_btnb"
+        app:layout_constraintEnd_toStartOf="@+id/delete_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_btna" />
+
+    <Button
+        android:id="@+id/delete_btna"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="35dp"
+        android:text="excluir"
+        app:layout_constraintBottom_toTopOf="@+id/add_btna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/add_btnb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="197dp"
+        android:layout_toStartOf="@id/delete_btn"
+        android:text="editar"
+        app:layout_constraintBottom_toTopOf="@+id/add_btnc"
+        app:layout_constraintEnd_toStartOf="@+id/delete_btnb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_btna" />
+
+    <Button
+        android:id="@+id/delete_btnb"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="30dp"
+        android:text="excluir"
+        app:layout_constraintBottom_toTopOf="@+id/delete_btnc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_btnb"
+        app:layout_constraintTop_toBottomOf="@+id/delete_btn" />
+
+    <Button
+        android:id="@+id/add_btnc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="197dp"
+        android:layout_toStartOf="@id/delete_btn"
+        android:text="editar"
+        app:layout_constraintBottom_toTopOf="@+id/add_btnd"
+        app:layout_constraintEnd_toStartOf="@+id/delete_btnc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_btnb" />
+
+    <Button
+        android:id="@+id/delete_btnc"
+        android:layout_width="82dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="30dp"
+        android:text="excluir"
+        app:layout_constraintBottom_toTopOf="@+id/delete_btnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_btnc"
+        app:layout_constraintTop_toBottomOf="@+id/delete_btnb" />
+
+    <Button
+        android:id="@+id/add_btnd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="107dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="197dp"
+        android:layout_toStartOf="@id/delete_btn"
+        android:text="editar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/delete_btnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_btnc" />
+
+    <Button
+        android:id="@+id/delete_btnd"
+        android:layout_width="82dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="107dp"
+        android:layout_marginEnd="30dp"
+        android:text="excluir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_btnd"
+        app:layout_constraintTop_toBottomOf="@+id/delete_btnc" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="389dp"
+        android:layout_height="340dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:headerDividersEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</android.support.constraint.ConstraintLayout>

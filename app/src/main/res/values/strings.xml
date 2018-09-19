@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">BDHouse</string>
     <string name="logo">logo</string>
+    <string name="gerenciar_visitas">Gerenciar Visitas</string>
+    <string name="inserir_visita">Inserir Visita</string>
+    <string name="tempo_de_acesso_permitido">Tempo de acesso permitido</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="nome">Nome</string>
+    <string name="id">ID</string>
+    <string name="editar_visita">Editar Visita</string>
+    <string name="button">Button</string>
 </resources>
