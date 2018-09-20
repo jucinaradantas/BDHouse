@@ -23,8 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VisitaActivity" android:parentActivityName=".BDHActivity" />
+        <activity
+            android:name=".VisitaActivity"
+            android:parentActivityName=".BDHActivity" />
         <activity android:name=".Visita_EditarActivity" />
+        <activity android:name=".Visita_InserirActivity"></activity>
     </application>
 
 </manifest>
