@@ -9,4 +9,5 @@
     <string name="id">ID</string>
     <string name="editar_visita">Editar Visita</string>
     <string name="button">Button</string>
+    <string name="excluir">excluir</string>
 </resources>
