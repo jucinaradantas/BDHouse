@@ -28,6 +28,7 @@
             android:parentActivityName=".BDHActivity" />
         <activity android:name=".Visita_EditarActivity" />
         <activity android:name=".Visita_InserirActivity" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>

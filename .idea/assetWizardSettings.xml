@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="69" />
+                                                <entry key="scalingPercent" value="107" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -35,11 +35,11 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="000000" />
-                                      <entry key="backgroundLayerName" value="ic_bdh_background" />
-                                      <entry key="foregroundImage" value="C:\Users\judmd\Desktop\BDH\BDH-branco.png" />
-                                      <entry key="foregroundLayerName" value="ic_bdh_foreground" />
-                                      <entry key="outputName" value="ic_bdh_logo" />
+                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="backgroundLayerName" value="ic_bdhouse_background" />
+                                      <entry key="foregroundImage" value="C:\Users\judmd\Desktop\BDH\BDH.PNG" />
+                                      <entry key="foregroundLayerName" value="ic_bdhouse_foreground" />
+                                      <entry key="outputName" value="ic_bdhouse_logo" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -53,6 +53,11 @@
                 </map>
               </option>
             </PersistentState>
+          </value>
+        </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState />
           </value>
         </entry>
       </map>
