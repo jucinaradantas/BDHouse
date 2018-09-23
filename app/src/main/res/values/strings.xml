@@ -8,10 +8,18 @@
     <string name="nome">Nome</string>
     <string name="id">ID</string>
     <string name="editar_visita">Editar Visita</string>
-    <string name="button">Button</string>
     <string name="excluir">excluir</string>
-    <string name="usuario">Usuário</string>
     <string name="senha">Senha</string>
     <string name="entrar">Entrar</string>
     <string name="logoUser">LogoUsuário</string>
+    <string name="luzes">Luzes</string>
+    <string name="visita">Visita</string>
+    <string name="alarme">Alarme</string>
+    <string name="eletrodomesticos">Eletrodomésticos</string>
+    <string name="teto">Teto</string>
+    <string name="solo">Umidade do solo</string>
+    <string name="ar">Temperatura e umidade do ar</string>
+    <string name="portao">Portão</string>
+    <string name="todo">TODO</string>
+    <string name="usuario">Usuário</string>
 </resources>
