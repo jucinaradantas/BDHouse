@@ -8,7 +8,7 @@
     <string name="nome">Nome</string>
     <string name="id">ID</string>
     <string name="editar_visita">Editar Visita</string>
-    <string name="excluir">excluir</string>
+    <string name="excluir">Excluir</string>
     <string name="senha">Senha</string>
     <string name="entrar">Entrar</string>
     <string name="logoUser">LogoUsuário</string>
@@ -20,6 +20,20 @@
     <string name="solo">Umidade do solo</string>
     <string name="ar">Temperatura e umidade do ar</string>
     <string name="portao">Portão</string>
-    <string name="todo">TODO</string>
     <string name="usuario">Usuário</string>
+    <string name="sair">sair</string>
+    <string name="eletrodomestisco">Controle de Eletrodomésticos</string>
+    <string name="ControlarAlarme">Controle do Alarme</string>
+    <string name="parar">Parar</string>
+    <string name="todo">TODO</string>
+    <string name="ligar">Ligar</string>
+    <string name="tv_quarto">TV-Quarto</string>
+    <string name="desligar">Desligar</string>
+    <string name="tv_quarto_principal">TV-Quarto Principal</string>
+    <string name="microondas">Microondas</string>
+    <string name="r_dio">Rádio</string>
+    <string name="chuveiro">Chuveiro</string>
+    <string name="chuveiro_su_te">Chuveiro Suíte</string>
+    <string name="controle_de_eletro">Controle de Eletrodomésticos</string>
+
 </resources>

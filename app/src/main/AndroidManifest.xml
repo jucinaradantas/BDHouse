@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.edu.ifsp.bdhouse">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_bdh_logo"
@@ -26,17 +28,43 @@
         <activity
             android:name=".VisitaActivity"
             android:parentActivityName=".BDHActivity" />
-        <activity android:name=".Visita_EditarActivity" />
-        <activity android:name=".Visita_InserirActivity" />
+        <activity
+            android:name=".Visita_EditarActivity"
+            android:parentActivityName=".VisitaActivity" />
+        <activity
+            android:name=".Visita_InserirActivity"
+            android:parentActivityName=".VisitaActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".UsuarioActivity" />
-        <activity android:name=".AlarmeActivity" />
-        <activity android:name=".LuzesActivity" />
-        <activity android:name=".EletrodomesticoActivity" />
-        <activity android:name=".PortaoActivity" />
-        <activity android:name=".TetoActivity" />
-        <activity android:name=".SoloActivity" />
-        <activity android:name=".ArActivity"></activity>
+        <activity
+            android:name=".UsuarioActivity"
+            android:parentActivityName=".BDHActivity" />
+        <activity
+            android:name=".Usuario_InserirActivity"
+            android:parentActivityName=".UsuarioActivity" />
+        <activity
+            android:name=".Usuario_EditarActivity"
+            android:parentActivityName=".UsuarioActivity" />
+        <activity
+            android:name=".AlarmeActivity"
+            android:parentActivityName=".BDHActivity" />
+        <activity
+            android:name=".LuzesActivity"
+            android:parentActivityName=".BDHActivity" />
+        <activity
+            android:name=".EletrodomesticoActivity"
+            android:parentActivityName=".BDHActivity" />
+        <activity
+            android:name=".PortaoActivity"
+            android:parentActivityName=".BDHActivity" />
+        <activity
+            android:name=".TetoActivity"
+            android:parentActivityName=".BDHActivity" />
+        <activity
+            android:name=".SoloActivity"
+            android:parentActivityName=".BDHActivity" />
+        <activity
+            android:name=".ArActivity"
+            android:parentActivityName=".BDHActivity" />
     </application>
 
 </manifest>

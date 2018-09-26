@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="107" />
+                                                <entry key="scalingPercent" value="74" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -36,10 +36,8 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="backgroundLayerName" value="ic_bdhouse_background" />
-                                      <entry key="foregroundImage" value="C:\Users\judmd\Desktop\BDH\BDH.PNG" />
-                                      <entry key="foregroundLayerName" value="ic_bdhouse_foreground" />
-                                      <entry key="outputName" value="ic_bdhouse_logo" />
+                                      <entry key="foregroundImage" value="C:\Users\judmd\Desktop\BDH\eletro.png" />
+                                      <entry key="outputName" value="ic_eletro" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -57,7 +55,40 @@
         </entry>
         <entry key="vectorWizard">
           <value>
-            <PersistentState />
+            <PersistentState>
+              <option name="children">
+                <map>
+                  <entry key="vectorAssetStep">
+                    <value>
+                      <PersistentState>
+                        <option name="children">
+                          <map>
+                            <entry key="clipartAsset">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/alert/ic_warning_black_24dp.xml" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="color" value="0d487e" />
+                            <entry key="outputName" value="ic_warning_black_24dp" />
+                            <entry key="sourceFile" value="C:\Users\judmd" />
+                          </map>
+                        </option>
+                      </PersistentState>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </PersistentState>
           </value>
         </entry>
       </map>
