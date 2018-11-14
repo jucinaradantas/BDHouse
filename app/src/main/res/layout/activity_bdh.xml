@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     tools:context=".BDHActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="25dp">
 
 
     <ImageButton
@@ -23,15 +23,17 @@
     <TextView
         android:id="@+id/textView18"
         android:layout_width="0dp"
-        android:layout_height="58dp"
+        android:layout_height="68dp"
         android:layout_marginBottom="26dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginStart="22dp"
         android:text="@string/ar"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView14"
-        app:layout_constraintStart_toStartOf="@+id/textView14" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView17" />
 
     <TextView
         android:id="@+id/textView17"
@@ -51,22 +53,25 @@
         android:id="@+id/textView16"
         android:layout_width="86dp"
         android:layout_height="19dp"
-        android:layout_marginBottom="65dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="77dp"
         android:text="@string/teto"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageButton9"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageButton9" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="135dp"
         android:layout_height="19dp"
-        android:layout_marginBottom="74dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginTop="73dp"
         android:text="@string/eletrodomesticos"
         android:textAlignment="center"
         android:textSize="16sp"
@@ -79,17 +84,17 @@
     <TextView
         android:id="@+id/textView14"
         android:layout_width="86dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="68dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="33dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="37dp"
         android:text="@string/portao"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton11"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton8" />
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView15"
@@ -108,23 +113,21 @@
         android:id="@+id/textView9"
         android:layout_width="0dp"
         android:layout_height="26dp"
-        android:layout_marginBottom="176dp"
-        android:layout_marginTop="177dp"
+        android:layout_marginEnd="41dp"
         android:text="@string/alarme"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView14"
-        app:layout_constraintEnd_toEndOf="@+id/textView14"
-        app:layout_constraintStart_toStartOf="@+id/imageButton5"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="86dp"
         android:layout_height="19dp"
-        android:layout_marginBottom="177dp"
-        android:layout_marginTop="177dp"
+        android:layout_marginBottom="153dp"
+        android:layout_marginTop="154dp"
         android:text="@string/visita"
         android:textAlignment="center"
         android:textSize="16sp"
@@ -136,14 +139,16 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="89dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginEnd="139dp"
         android:layout_marginStart="29dp"
         android:text="@string/usuario"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
@@ -153,10 +158,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="14dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toStartOf="@+id/btnSair"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_notifications_24dp"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/ic_notifications_24dp" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -164,12 +169,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:background="@android:color/white"
+        android:contentDescription="@string/todo"
         android:onClick="lauchUsuario"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="@+id/imageButton3"
-        app:srcCompat="@mipmap/ic_usuario"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@mipmap/ic_usuario" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -177,23 +182,23 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
         android:background="@android:color/white"
+        android:contentDescription="@string/todo"
         android:onClick="lauchVisitas"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="@+id/textView12"
-        app:srcCompat="@mipmap/ic_visita"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@mipmap/ic_visita" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
         android:background="@android:color/white"
+        android:contentDescription="@string/todo"
         android:onClick="lauchAlarme"
         app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton8"
-        app:layout_constraintStart_toStartOf="@+id/imageButton8"
-        app:srcCompat="@mipmap/ic_alarme"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:srcCompat="@mipmap/ic_alarme" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -201,51 +206,50 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:background="@android:color/white"
+        android:contentDescription="@string/todo"
         android:onClick="lauchLuzes"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/ic_luzes"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@mipmap/ic_luzes" />
 
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
         android:layout_marginStart="31dp"
         android:background="@android:color/white"
+        android:contentDescription="@string/todo"
         android:onClick="lauchEletrodomestico"
-        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
         app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:srcCompat="@mipmap/ic_eletro"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@mipmap/ic_eletro" />
 
     <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="223dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="223dp"
+        android:layout_marginBottom="234dp"
+        android:layout_marginTop="235dp"
         android:background="@android:color/white"
+        android:contentDescription="@string/todo"
         android:onClick="lauchPortao"
         app:layout_constraintBottom_toBottomOf="@+id/textView18"
         app:layout_constraintStart_toStartOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:srcCompat="@mipmap/ic_portao"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_portao" />
 
     <ImageButton
         android:id="@+id/imageButton9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:background="@android:color/white"
+        android:contentDescription="@string/todo"
         android:onClick="lauchTeto"
         app:layout_constraintBottom_toTopOf="@+id/textView17"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
         app:layout_constraintTop_toTopOf="@+id/imageButton10"
-        app:srcCompat="@mipmap/ic_teto"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@mipmap/ic_teto" />
 
     <ImageButton
         android:id="@+id/imageButton10"
@@ -253,22 +257,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:background="@android:color/white"
+        android:contentDescription="@string/todo"
         android:onClick="lauchSolo"
         app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintStart_toStartOf="@+id/textView17"
-        app:srcCompat="@mipmap/ic_solo"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@mipmap/ic_solo" />
 
     <ImageButton
         android:id="@+id/imageButton11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
+        android:layout_marginStart="8dp"
         android:background="@android:color/white"
+        android:contentDescription="@string/todo"
         android:onClick="lauchAr"
         app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintStart_toStartOf="@+id/textView18"
-        app:srcCompat="@mipmap/ic_ar"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@mipmap/ic_ar" />
 
 </android.support.constraint.ConstraintLayout>

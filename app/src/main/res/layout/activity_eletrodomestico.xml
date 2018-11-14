@@ -153,8 +153,8 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="215dp"
+        android:layout_height="72dp"
         android:layout_marginEnd="94dp"
         android:text="@string/controle_de_eletro"
         android:textSize="24sp"
