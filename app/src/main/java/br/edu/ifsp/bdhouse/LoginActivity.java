@@ -51,14 +51,16 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private class APILogin extends AsyncTask<String, Void, String[]> {
-        private String endereco = "http://127.0.0.1:8000/";
+
         //private String endereco= "http://10.0.0.100/";
         ProgressDialog dialog;
 
         @Override
         protected String[] doInBackground(String... params) {
             try {
-                URL url = new URL(endereco + "usuario/mobilelogin?login=" + params[0] + "&senha=" + params[1]);
+                String endereco = "http://192.168.43.188/usuario/mobilelogin?login=" + params[0] + "&senha=" + params[1];
+
+                URL url = new URL(endereco );
                 URLConnection conn = url.openConnection();
                 InputStream is = conn.getInputStream();
                 Scanner scanner = new Scanner(is);
@@ -79,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
                 return null;
             } catch (Exception e) {
                 String message = e.getMessage();
-                Toast.makeText(getBaseContext(), "Falha no login!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getBaseContext(), "Falha no login!", Toast.LENGTH_SHORT).show();
                 return null;
             }
 
@@ -94,14 +96,14 @@ public class LoginActivity extends AppCompatActivity {
         protected void onPostExecute(String[] result) {
             if (result != null) {
                 if (result != null && result.length == 1) {
-                    Toast.makeText(getBaseContext(), result[0], Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getBaseContext(), result[0], Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), BDHActivity.class);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(getBaseContext(), "Falha no login!", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getBaseContext(), "Falha no login!", Toast.LENGTH_SHORT).show();
                 }
             } else {
-                Toast.makeText(getBaseContext(), "Falha no login!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getBaseContext(), "Falha no login!", Toast.LENGTH_SHORT).show();
             }
         }
     }
