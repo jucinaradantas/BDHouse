@@ -37,11 +37,17 @@ public class LoginActivity extends AppCompatActivity {
         //trecho do login
         boolean logado = false;
         String params[] = new String[2];
+
         params[0] = email.getText().toString();
         params[1] = password.getText().toString();
 
-        APILogin apiLogin = new APILogin();
-        apiLogin.execute(params);
+        if(params[0].isEmpty() || params[1].isEmpty()){
+            Toast.makeText(getBaseContext(), "Por favor, preencha todos os campos!", Toast.LENGTH_SHORT).show();
+        }else{
+            APILogin apiLogin = new APILogin();
+            apiLogin.execute(params);
+        }
+
         //fim do trecho do login
 
         //se nao tiver acesso a aplicacao do api comente o trecho acima e descomente as duas linhas abaixo
@@ -58,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         protected String[] doInBackground(String... params) {
             try {
-                String endereco = "http://192.168.43.188/usuario/mobilelogin?login=" + params[0] + "&senha=" + params[1];
+                String endereco = "http://192.168.0.104/usuario/mobilelogin?login=" + params[0] + "&senha=" + params[1];
 
                 URL url = new URL(endereco );
                 URLConnection conn = url.openConnection();
@@ -75,8 +81,10 @@ public class LoginActivity extends AppCompatActivity {
                     Login.loggedUser.senha = jsonObject.getString("senha");
                     Login.loggedUser.nome = jsonObject.getString("nome");
                     result[0] = "Bem vindo " + Login.loggedUser.nome + " !";
+                    scanner.close();
                     return result;
                 }
+                //Toast.makeText(getBaseContext(), "Falha no login! Credenciais inválidas", Toast.LENGTH_SHORT).show();
                 scanner.close();
                 return null;
             } catch (Exception e) {
@@ -96,17 +104,15 @@ public class LoginActivity extends AppCompatActivity {
         protected void onPostExecute(String[] result) {
             if (result != null) {
                 if (result != null && result.length == 1) {
-                    //Toast.makeText(getBaseContext(), result[0], Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), result[0], Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), BDHActivity.class);
                     startActivity(intent);
                 } else {
-                    //Toast.makeText(getBaseContext(), "Falha no login!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "Falha no login!", Toast.LENGTH_SHORT).show();
                 }
             } else {
-                //Toast.makeText(getBaseContext(), "Falha no login!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Falha no login!", Toast.LENGTH_SHORT).show();
             }
         }
     }
-
-
-    }
+}
