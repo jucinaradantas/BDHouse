@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         protected String[] doInBackground(String... params) {
             try {
-                String endereco = "http://192.168.0.104/usuario/mobilelogin?login=" + params[0] + "&senha=" + params[1];
+                String endereco = Login.endereco + "usuario/mobilelogin?login=" + params[0] + "&senha=" + params[1];
 
                 URL url = new URL(endereco );
                 URLConnection conn = url.openConnection();
