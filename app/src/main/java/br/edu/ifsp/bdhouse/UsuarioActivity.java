@@ -1,6 +1,7 @@
 package br.edu.ifsp.bdhouse;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -53,6 +54,7 @@ public class UsuarioActivity extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.listUsers);
 
+
         adapter = new ArrayAdapter<User>(this,
                 android.R.layout.simple_list_item_1, users);
 
@@ -101,7 +103,6 @@ public class UsuarioActivity extends AppCompatActivity {
                         user.nome = jsonObject.getString("nome");
                         users.add(user);
                     }
-                    listView.setAdapter(adapter);
 
                     result[0] = "Sucesso na leitura !";
                     scanner.close();
@@ -125,6 +126,9 @@ public class UsuarioActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String[] result) {
+
+            listView.setAdapter(adapter);
+            adapter.notifyDataSetChanged();
             if (result == null) {
                 Toast.makeText(getBaseContext(), "Falha na leitura de usuários.", Toast.LENGTH_SHORT).show();
             }

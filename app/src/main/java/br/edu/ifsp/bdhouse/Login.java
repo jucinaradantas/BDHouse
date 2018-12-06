@@ -2,5 +2,5 @@ package br.edu.ifsp.bdhouse;
 
 public class Login {
     public static User loggedUser;
-    public static String endereco = "http://192.168.43.188/";
+    public static String endereco = "http://192.168.0.104/";
 }
