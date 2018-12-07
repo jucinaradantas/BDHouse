@@ -51,13 +51,13 @@
         android:layout_marginEnd="17dp"
         android:layout_marginStart="16dp"
         android:text="Nome:"
-        app:layout_constraintBottom_toBottomOf="@+id/editText8"
-        app:layout_constraintEnd_toStartOf="@+id/editText8"
+        app:layout_constraintBottom_toBottomOf="@+id/insertUserNome"
+        app:layout_constraintEnd_toStartOf="@+id/insertUserNome"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editText8" />
+        app:layout_constraintTop_toTopOf="@+id/insertUserNome" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/insertUserNome"
         android:layout_width="249dp"
         android:layout_height="28dp"
         android:layout_marginBottom="38dp"
@@ -76,12 +76,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="239dp"
         android:text="Parentesco:"
-        app:layout_constraintEnd_toStartOf="@+id/editText9"
+        app:layout_constraintEnd_toStartOf="@+id/insertUserParentesco"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/insertUserParentesco"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="48dp"
@@ -101,11 +101,11 @@
         android:layout_marginStart="16dp"
         android:text="Tipo de Acesso:"
         android:textSize="14sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText10"
+        app:layout_constraintBaseline_toBaselineOf="@+id/insertUserLogin"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/insertUserLogin"
         android:layout_width="0dp"
         android:layout_height="35dp"
         android:layout_marginEnd="5dp"
@@ -115,9 +115,9 @@
         android:hint="Usuário ou Administrador"
         android:inputType="textPersonName"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/editText9"
+        app:layout_constraintEnd_toEndOf="@+id/insertUserParentesco"
         app:layout_constraintStart_toEndOf="@+id/textView56"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        app:layout_constraintTop_toBottomOf="@+id/insertUserParentesco" />
 
     <Button
         android:id="@+id/button9"
@@ -139,5 +139,5 @@
         android:text="Cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+        app:layout_constraintTop_toBottomOf="@+id/insertUserLogin" />
 </android.support.constraint.ConstraintLayout>
