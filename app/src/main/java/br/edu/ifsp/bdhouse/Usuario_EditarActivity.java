@@ -9,5 +9,7 @@ public class Usuario_EditarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuario__editar);
+
+        User user = (User) getIntent().getSerializableExtra("SelectedUser");
     }
 }

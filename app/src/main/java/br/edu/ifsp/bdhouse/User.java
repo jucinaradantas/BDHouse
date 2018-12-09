@@ -1,8 +1,9 @@
 package br.edu.ifsp.bdhouse;
 
+import java.io.Serializable;
 
 
-public class User {
+public class User implements Serializable {
     public int id;
     public String nome;
     public String senha;

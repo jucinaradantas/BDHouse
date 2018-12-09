@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -16,6 +17,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.InputStream;
+import java.io.Serializable;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -53,8 +55,18 @@ public class UsuarioActivity extends AppCompatActivity {
         api.execute();
 
         listView = (ListView) findViewById(R.id.listUsers);
-
-
+        listView.setOnItemClickListener(
+                new AdapterView.OnItemClickListener(){
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id ){
+                        User user = users.get(position);
+                        Toast.makeText(getBaseContext(), "Usuário selecionado: " + user.toString(), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getBaseContext(),Usuario_EditarActivity.class);
+                        intent.putExtra("SelectedUser", user);
+                        startActivity(intent);
+                    }
+                }
+        );
         adapter = new ArrayAdapter<User>(this,
                 android.R.layout.simple_list_item_1, users);
 
